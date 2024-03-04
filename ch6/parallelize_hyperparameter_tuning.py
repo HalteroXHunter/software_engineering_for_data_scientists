@@ -11,7 +11,7 @@ parameters = {"n_estimators": (50, 100, 150, 200),
 
 forest = MlModel(ml_model = RandomForestRegressor(),
                  parameters = parameters,
-                 n_jobs = 3,
+                 n_jobs = 10,
                  scoring = "neg_mean_squared_error",
                  n_iter = 5,
                  random_state = 0)

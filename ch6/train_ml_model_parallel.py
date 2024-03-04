@@ -1,5 +1,3 @@
-
-
 import pandas as pd
 from sklearn.ensemble import RandomForestRegressor
 import time
@@ -18,7 +16,7 @@ forest_model = RandomForestRegressor(n_estimators = 300,
                                        min_samples_split = 40,
                                        max_depth = 3,
                                        verbose = 1,
-                                       n_jobs = 3
+                                       n_jobs = 13 #increase num of CPU cores
                                        )
 
 forest_model.fit(artists[features], artists.popularity)

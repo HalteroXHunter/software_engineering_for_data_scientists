@@ -26,7 +26,8 @@ class MlModel:
                                       n_jobs=self.n_jobs,
                                       scoring = self.scoring,
                                       n_iter = self.n_iter,
-                                      random_state = self.random_state)
+                                      random_state = self.random_state,
+                                      verbose=1)
 
         self.clf.fit(X_features, y)
 
