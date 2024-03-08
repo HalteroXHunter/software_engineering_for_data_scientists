@@ -3,7 +3,7 @@ import dask.dataframe as dd
 import time
 
 start = time.time()
-ad_frame = dd.read_csv("data/ads_train_data.csv", 
+ad_frame = dd.read_csv("data/ads_train_data_v1.csv", 
                       usecols=("click", "banner_pos", "site_category"))
 
 

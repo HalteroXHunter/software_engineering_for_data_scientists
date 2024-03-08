@@ -16,6 +16,6 @@ def get_random_sample(filename: str, sample_rate: float):
     
 
 start = time.time()
-sampled_data = get_random_sample("data/ads_train_data.csv", 0.1)
+sampled_data = get_random_sample("data/ads_train_data_v1.csv", 0.1)
 end = time.time()
 print("Read in dataset in ", end - start, " seconds")

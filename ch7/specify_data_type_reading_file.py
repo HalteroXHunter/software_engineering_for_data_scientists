@@ -3,7 +3,7 @@
 import pandas as pd
 import numpy as np
 
-ad_data = pd.read_csv("data/ads_train_data.csv",
+ad_data = pd.read_csv("data/ads_train_data_v1.csv",
                       chunksize=1000000, 
                       dtype = {"site_category": "category",
                                "C1": np.int32,
