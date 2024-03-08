@@ -6,7 +6,7 @@ from sklearn.linear_model import SGDClassifier
 
 def train_model():
     
-    filename = "data/ads_train_data.csv"
+    filename = "data/ads_train_data_v1.csv"
     fields = ["click", "site_category", "banner_pos"]
     
     ad_data = pd.read_csv(filename, 
@@ -14,7 +14,7 @@ def train_model():
                            usecols = fields)
   
     sgd_model = SGDClassifier(random_state = 0,
-                              loss = "log")
+                              loss = "log_loss")
     
     
     fields = []
