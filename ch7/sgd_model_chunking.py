@@ -65,10 +65,7 @@ class Chunk_pipeline:
         
     @profile    
     def evaluate_model(self):
-        print(self.keep_cols)
-        a = pd.read_csv(self.test_filename)
-        print(a.columns, a.info())
-        exit()
+        
         test_chunks = pd.read_csv(self.test_filename, chunksize=self.chunksize, usecols=self.keep_cols)
                 
         accuracies = []
