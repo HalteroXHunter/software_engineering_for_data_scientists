@@ -1,4 +1,3 @@
-
 import dask.dataframe as dd
 import time
 from dask.distributed import LocalCluster, Client
@@ -7,8 +6,7 @@ cluster = LocalCluster()
 client = Client(cluster)
 
 start = time.time()
-ad_frame = dd.read_csv("data/ads_train_data.csv", 
-                      usecols=("click", "banner_pos", "site_category"))
+ad_frame = dd.read_csv("data/ads_train_data.csv", usecols=("click", "banner_pos", "site_category"))
 
 
 
